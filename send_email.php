@@ -24,14 +24,14 @@ use PHPMailer\PHPMailer\PHPMailer;
             $mail->isSMTP();                                            //Send using SMTP
             $mail->Host       = 'smtp.gmail.com';                       //Set the SMTP server to send through
             $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-            $mail->Username   = 'firoz.fkofficial@gmail.com';                 //SMTP username
-            $mail->Password   = 'mgzd gmrf esci fxrs';                     //SMTP password
+            $mail->Username   = 'Your email';                 //SMTP username
+            $mail->Password   = 'Your email app password';                     //SMTP password
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
             $mail->Port       = 465;                                    //TCP port to connect to
     
             //Recipients
-            $mail->setFrom('firoz.fkofficial@gmail.com', 'Profile Form');        //Your email and name
-            $mail->addAddress('abaazkhan95ak@gmail.com', 'Abaaz Khan'); //Recipient's email and name
+            $mail->setFrom('Your Email', 'Profile Form');        //Your email and name
+            $mail->addAddress('Recipients email', 'Recipients name'); //Recipient's email and name
             $mail->addReplyTo($email, $name);                          //User's email and name
     
             //Content
