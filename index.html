@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="fk_logo.jpg", type="image/jpg">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    
+
+
+</head>
+<body>
+<div class="profile-card">
+    <figure class="profile-card_img">
+       <img src="profile.jpg" alt="..">
+    </figure>
+
+    <div class="profile-card_desc">
+        <h1>Firoz Khan
+        </h1>
+        <div>Full Stack Developer</div>
+        <div style="display: flex; align-items: center;gap: 10px;justify-content: center;"><a style="color: black;" href="https://www.google.com/maps/"><ion-icon name="location-outline"></ion-icon></a> <span>FBD, Harayana</span>
+        </div>
+    </div>
+    <div class="profile-card_info">
+    <div> 
+        <div>1.9k</div>
+        <div>Followers</div>
+    </div>
+    <div>
+        <div>1.2k</div>
+        <div>Reference</div>
+    </div>
+    <div>
+        <div>10</div>
+        <div>Works</div>
+    </div>
+</div>
+    <div class="profile-card_social">
+        <a href="https://www.facebook.com/arush.khan.9615" class="facebook"><ion-icon name="logo-facebook"></ion-icon></a>
+        <a href="https://x.com/FkofficialKhan" class="twitter"><ion-icon name="logo-twitter"></ion-icon></a>
+        <a href="https://www.instagram.com/code_real_ease/" class="insta"><ion-icon name="logo-instagram"></ion-icon></a>
+        <a href="https://www.youtube.com/@firozkhan-k9l" class="youtube"><ion-icon name="logo-youtube"></ion-icon></a>
+        <a href="https://github.com/firozkcode" class="github"><ion-icon name="logo-github"></ion-icon></a>
+    </div>
+
+    <div class="profile-card_actions">
+        <a href="#divOne" class="button">Contact Me</a>
+        <a href="https://github.com/firozkcode" class="orange">Follow me</a>
+    </div>
+</div>
+
+<div class="overlay" id="divOne">
+    <div class="wrapper">
+        <h2>Please Fill Up The Form</h2>
+        <a href="#" class="close">&times;</a>
+        <div class="content">
+            <div class="container">
+                <form action="https://formspree.io/f/xeoakdlv" method="POST">
+                    <!-- <form action="send_email.php" method="POST"> -->
+                    <label for="name">Full Name</label>
+                    <input type="text" name="name" placeholder="Your Full Name">
+                    <label for="subject">Subject</label>
+                    <input type="text" name="subject" placeholder="Subject">
+                    <label for="email">Email</label>
+                    <input type="text" name="email" placeholder="Your Email">
+                    <label name="message">Message</label>
+                    <textarea name="message" placeholder="Your Query Here..."></textarea>
+                    <input type="submit" name="send" value="Send">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>     
+</body>
+</html>
